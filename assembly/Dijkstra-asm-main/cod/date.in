@@ -1,0 +1,11 @@
+Noduri: 6
+Nume noduri: a b c d e f
+Nod de start: a
+Nod de start: d
+Numar muchii: 5
+Muchii:
+a b 7
+a c 9
+b c 10
+b d 15
+c d 11

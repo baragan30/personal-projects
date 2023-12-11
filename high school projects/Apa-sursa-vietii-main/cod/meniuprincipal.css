@@ -1,0 +1,50 @@
+.meniuri{ 
+    padding:0px;
+    list-style-type:none;
+    position: sticky;
+    top:0px;
+}
+.meniuri  li{ 
+  text-align:center;
+    float:left;
+    width :25%;
+    height:65px;
+    background-color:black;
+    opacity:.8;
+    font-size: 100%;
+}
+.meniuri a{
+    padding-top: 20px;
+   text-decoration:none;
+    color:white;
+    display:block;
+    font-size: 30px;
+}
+
+
+.nature{
+    display: none;
+}
+
+
+.meniuri a:hover{
+    opacity:.20;
+}
+ul{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+.hazard:hover .nature{
+    display: block;
+    width:400%;
+    
+}
+.nature{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+.nature li{
+    float: none;
+}

@@ -1,0 +1,11 @@
+select{
+    background-color: #3e444a;
+    color: white;
+}
+button{
+    background-color: #343a40;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    border: 0px;
+}

@@ -1,0 +1,59 @@
+  MiniHabitData miniHabitDomainList = MiniHabitData(
+    actives: [
+      MiniHabitDomain(
+        name: 'Productivity',
+        stage: MiniHabitStage.active,
+        actives: [
+          MiniHabit(
+            description:
+                "read 1 page in a book -----------------------------------------------------",
+            stage: MiniHabitStage.active,
+          ),
+          MiniHabit(
+            description: 'write 3 news ideas',
+            stage: MiniHabitStage.active,
+          ),
+          MiniHabit(
+            description: 'clean a room in your house',
+            stage: MiniHabitStage.active,
+          ),
+        ],
+        pasives: [
+          MiniHabit(
+            description: 'learn one word in german',
+            stage: MiniHabitStage.idle,
+          ),
+          MiniHabit(
+            description: 'write 50 words in a notebook',
+            stage: MiniHabitStage.idle,
+          ),
+        ],
+      ),
+      MiniHabitDomain(
+        name: 'Business',
+        stage: MiniHabitStage.active,
+        actives: [],
+        pasives: [],
+      ),
+      MiniHabitDomain(
+        name: '2',
+        stage: MiniHabitStage.active,
+        actives: [],
+        pasives: [],
+      ),
+      MiniHabitDomain(
+        name: 'Inteligence',
+        stage: MiniHabitStage.active,
+        actives: [],
+        pasives: [],
+      ),
+    ],
+    pasives: [
+      MiniHabitDomain(
+        name: 'Health,Diet,&Well-being',
+        stage: MiniHabitStage.idle,
+        actives: [],
+        pasives: [],
+      ),
+    ],
+  );

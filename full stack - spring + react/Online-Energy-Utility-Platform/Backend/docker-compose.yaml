@@ -1,0 +1,64 @@
+version: '3'
+services:
+
+  server:
+    image: ds/server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - producer1
+      - rabbitmq
+    environment:
+      - DB_IP=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=1234
+      - DB_DBNAME=city-db
+
+  producer1:
+    image: ds/producer
+    environment:
+      - DEVICE_ID=1
+      - DEVICE_TIMESTAMP=1000
+      - DB_IP=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=1234
+      - DB_DBNAME=city-db
+    depends_on:
+      - rabbitmq
+#  producer2:
+#    image: ds/producer
+#    environment:
+#      - DEVICE_ID=4
+#      - DEVICE_TIMESTAMP=10000
+#      - DB_IP=db
+#      - DB_PORT=3306
+#      - DB_USER=root
+#      - DB_PASSWORD=1234
+#      - DB_DBNAME=city-db
+#    depends_on:
+#      - rabbitmq
+
+#  docker run -it --rm --name rabbitmq -p 5672:5672 -p "15672:15672" rabbitmq:3.8
+  rabbitmq:
+    image:  rabbitmq:3.11-management
+    container_name: 'rabbitmq'
+
+
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=city-db
+
+  application:
+    image: ds/application
+    ports:
+      - "3000:3000"
+volumes:
+  city-db-data:
+
