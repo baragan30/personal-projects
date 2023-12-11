@@ -15,17 +15,17 @@ So here's a prototype app where a user can confirm that he has recycled a compan
 
 - Main Screen : Here the user can see a sumar of its progress and his username.
 
- <img src="/images/main_screen.png" alt="" width="400" />
+ <img src="./images/main_screen.png" alt="" width="400" />
  
  -Progress Screen :  Here the user can see his progress.
  
- <img src="/images/progress_screen.png" alt="" width="400" />
+ <img src="./images/progress_screen.png" alt="" width="400" />
  
  -Vouchers Screen : Here the user can see his vouchers.
  
- <img src="/images/vouchers_screen.png" alt="" width="400" />
+ <img src="./images/vouchers_screen.png" alt="" width="400" />
  
  -Nav Bar : how the nav bar looks like
  
- <img src="/images/nav_bar.png" alt="" width="400" />
+ <img src="./images/nav_bar.png" alt="" width="400" />
 
